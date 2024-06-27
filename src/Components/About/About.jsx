@@ -13,7 +13,7 @@ const About = () => {
       <div className='about-right'>
         <h3> ABOUT ME </h3>
         <h2>Third year university student</h2>
-        <p> I have taken .... courses, done co=op etc etc etc will fill in</p>
+        <p> I have taken .... courses, done co-op etc etc etc will fill in</p>
       </div>
     </div>
   )
