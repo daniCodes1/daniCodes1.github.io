@@ -29,8 +29,6 @@ p {
 }
 .btn {
   border: 3px solid #000 !important;
-  color: white !important;
-  background-color: rgb(165, 2, 165) !important;
 
 }
 .btn:hover {
