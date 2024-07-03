@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Experiences.css'
 import next from '../../assets/next.png'
 import back from '../../assets/back.png'
@@ -17,23 +17,48 @@ const Experiences = () => {
       company: 'Terra CO2',
       date: 'May 2024 - Aug 2024',
       description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
-      image: programming // Assuming you have imported 'programming' image
+      image: programming
     },
     {
       title: 'IT Technician',
       company: 'Terra CO2',
       date: 'May 2024 - Aug 2024',
       description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
-      image: laptop // Assuming you have imported 'programming' image
+      image: laptop
+    },
+    {
+      title: 'Teaching Assistant',
+      company: 'Terra CO2',
+      date: 'May 2024 - Aug 2024',
+      description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
+      image: laptop
+    },
+    {
+      title: 'Youth Leader',
+      company: 'Terra CO2',
+      date: 'May 2024 - Aug 2024',
+      description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
+      image: laptop
     },
   ]
+  const slider = useRef();
+  let tx = 0; // translateX
+  const slideForward = () => {
+    if (tx > - 50) {
+      tx -= 25;
+    }
+    slider.current.style.transform = `translateX(${tx}%)`;
+  }
+  const slideBackward = () => {
+
+  }
   return (
     <div className='experiences'>
-      <img src={next} alt="next" className='next-btn' />
-      <img src={back} alt="back" className='back-btn' />
+      <img src={next} alt="next" className='next-btn' onClick={slideForward}/>
+      <img src={back} alt="back" className='back-btn' onClick={slideBackward} />
 
       <div className='slider'>
-        <ul>
+        <ul ref={slider}>
         {slides.map((slide, index) => (
           <li key={index}>
             <div className="slide">
