@@ -23,7 +23,7 @@
 }
 .slider ul {
   display: flex;
-  width: 200%; /* I have four   listed */
+  width: 400%; /* I have seven listed */
   overflow-x: hidden;
   transition: 0.5s;
 }
