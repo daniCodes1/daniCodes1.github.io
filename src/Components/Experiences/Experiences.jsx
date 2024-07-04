@@ -40,17 +40,48 @@ const Experiences = () => {
       description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
       image: laptop
     },
+    {
+      title: 'Instructor',
+      company: 'Terra CO2',
+      date: 'May 2024 - Aug 2024',
+      description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
+      image: laptop
+    },
+    {
+      title: 'Student Assistant',
+      company: 'Terra CO2',
+      date: 'May 2024 - Aug 2024',
+      description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
+      image: laptop
+    },
+    {
+      title: 'Brand Ambassador',
+      company: 'Terra CO2',
+      date: 'May 2024 - Aug 2024',
+      description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
+      image: laptop
+    },
+    {
+      title: 'Cast Member',
+      company: 'Terra CO2',
+      date: 'May 2024 - Aug 2024',
+      description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
+      image: laptop
+    },
   ]
   const slider = useRef();
   let tx = 0; // translateX
   const slideForward = () => {
-    if (tx > - 50) {
-      tx -= 25;
+    if (tx > - ((100/8)*6)) {
+      tx -= 100/8;
     }
     slider.current.style.transform = `translateX(${tx}%)`;
   }
   const slideBackward = () => {
-
+    if (tx < 0) {
+      tx += 100/8;
+    }
+    slider.current.style.transform = `translateX(${tx}%)`;
   }
   return (
     <div className='experiences'>
