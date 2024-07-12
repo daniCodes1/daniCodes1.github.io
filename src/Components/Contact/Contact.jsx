@@ -1,6 +1,7 @@
 import React from 'react'
 import './Contact.css'
 import msg_icon from '../../assets/msg-icon.png'
+import arrow from '../../assets/white-arrow.png'
 import '@fortawesome/fontawesome-free/css/all.css';
 
 const Contact = () => {
@@ -28,7 +29,19 @@ const Contact = () => {
           </li>
         </ul>
       </div>
-      <div className="contact-col"></div>
+      <div className="contact-col">
+        <form>
+          <label>Your name</label>
+          <input type="text" name='name' placeholder='Enter your name' required/>
+          <label>Phone Number</label>
+          <input type="tel" name='phone' placeholder='Enter your phone number' required/>
+          <label>Write your message here</label>
+          <textarea name="message" rows="6" placeholder='Enter your messagte' required/>
+          <button type="submit" className='btn dark-btn'>
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
   )
 }
