@@ -22,6 +22,25 @@
 }
 
 .hero-title p {
+  font-size: 20px;
   max-width: 700px;
   margin: 10px auto 20px;
+}
+/* MEDIA QUERY */
+@media (max-width: 850px) {
+  .hero-title h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-title h1 {
+    font-size: 30px;
+    max-width: 400px;
+    margin: auto;
+  }
+  .hero-title p {
+    font-size: 14px;
+    margin: 15px auto 30px;
+  }
 }
