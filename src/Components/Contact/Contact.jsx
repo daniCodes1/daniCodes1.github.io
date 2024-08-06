@@ -40,18 +40,18 @@ const Contact = () => {
           <li>  <a href="mailto:danirenn16@gmail.com"
                 class="social-icon"><i
                   class="fa fa-envelope"></i></a>
-                  <p> Email </p>
+                  <p><a href="mailto:danirenn16@gmail.com">Email</a></p>
           </li>
           <li> <a href="https://github.com/danicodes1"
                 class="social-icon"><i
                   class="fab fa-github"></i></a>
-                  <p> GitHub </p>
+                  <p><a href="https://github.com/danicodes1">GitHub</a></p>
           </li>
           <li> <a
                 href="https://ca.linkedin.com/in/dani-ren"
                 class="social-icon"><i
                   class="fab fa-linkedin"></i></a>
-                  <p> LinkedIn </p>
+                  <p> <a href="https://ca.linkedin.com/in/dani-ren">LinkedIn</a> </p>
           </li>
         </ul>
       </div>
