@@ -5,4 +5,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/',
   plugins: [react()],
+  build: {
+    outDir: 'dist', // Ensure the correct output directory
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'], // Ensure Vite can resolve .jsx files
+  },
 })
