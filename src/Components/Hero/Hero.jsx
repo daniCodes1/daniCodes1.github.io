@@ -8,7 +8,7 @@ const Hero = () => {
     <div className='hero container'>
       <div className='hero-title'>
         <h1>Welcome to my personal website</h1>
-        <p>I am a third year UBC computer science student </p>
+        <p>I am a third year UBC computer science student :)</p>
         <Link to='about' smooth={true} offset={-100} duration={500}
           className='btn'>Learn more <img src={arrow} alt="" /></Link>
       </div>

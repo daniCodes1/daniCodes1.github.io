@@ -1,14 +1,15 @@
 import React, { useRef } from 'react'
 import './Experiences.css'
-import next from '../../assets/next.png'
+import assistant from '../../assets/assistant.png'
 import back from '../../assets/back.png'
-import programming from '../../assets/programming.png'
-import laptop from '../../assets/laptop.png'
-import teaching from '../../assets/teaching.png'
-import science from '../../assets/science.png'
-import leader from '../../assets/leader.png'
+import next from '../../assets/next.png'
 import clothes from '../../assets/clothes.png'
-import woker from '../../assets/worker.png'
+import laptop from '../../assets/laptop.png'
+import leader from '../../assets/leader.png'
+import programming from '../../assets/programming.png'
+import science from '../../assets/science.png'
+import teaching from '../../assets/teaching.png'
+import worker from '../../assets/worker.png'
 
 const Experiences = () => {
   const slides = [
@@ -16,57 +17,61 @@ const Experiences = () => {
       title: 'Frontend Software Developer',
       company: 'Terra CO2',
       date: 'May 2024 - Aug 2024',
-      description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
+      description: [
+        'Developed a web application that enables internal users to interact with the company database.Users can add, modify, and create data, generate reports, and view maps.',
+        'Python, JavaScript, HTML, CSS, Flask'
+      ],
       image: programming
     },
     {
       title: 'IT Technician',
-      company: 'Terra CO2',
+      company: 'Immigration, Refugees and Citizenship',
       date: 'May 2024 - Aug 2024',
-      description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
+      description: 'Configured and troubleshooted OS, server, security network and application issues. Used Powershell scripting and Active Directory for network administration and managed all IT processes for an office with 200+ users while their IT Specialist was on leave.',
       image: laptop
     },
     {
-      title: 'Teaching Assistant',
-      company: 'Terra CO2',
-      date: 'May 2024 - Aug 2024',
-      description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
-      image: laptop
+      title: 'Undergraduate Teaching Assistant',
+      company: 'UBC',
+      date: 'Sept 2022 - May 2023',
+      description: '"Led computer science lab sessions and provided guidance on circuits and advanced logic techniques. Addressed student inquiries and offered constructive feedback during office hours to support their learning and development.',
+      image: teaching
     },
     {
       title: 'Youth Leader',
-      company: 'Terra CO2',
-      date: 'May 2024 - Aug 2024',
-      description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
-      image: laptop
+      company: 'The Arbutus Club',
+      date: 'April 2022 - Aug 2024',
+      description: 'Designed and led engaging activities for children and youth. Supervised groups during summer camp outings, ensuring adherence to camp rules and regulations while fostering a safe and enjoyable environment',
+      image: leader
     },
     {
       title: 'Instructor',
-      company: 'Terra CO2',
-      date: 'May 2024 - Aug 2024',
-      description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
-      image: laptop
+      company: 'Geering Up Engineering Outreach',
+      date: 'June 2022 - Aug 2022',
+      description: 'Taught STEM topics to over 50 children and ensured they actively participated in lessons and activities. Produced 14 structured lessons plans catering to different themes targeting diverse learning goals',
+      image: science
     },
     {
       title: 'Student Assistant',
-      company: 'Terra CO2',
-      date: 'May 2024 - Aug 2024',
-      description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
-      image: laptop
+      company: 'Burnaby School District',
+      date: 'June 2020 - Aug 2021',
+      description: 'Worked full-time for two summers to enhance safety measures for students at the start of the pandemic. Resolved health regulation issues as well as completed administrative tasks such as processing withdrawals and answering phone calls.',
+      image: assistant
     },
     {
       title: 'Brand Ambassador',
-      company: 'Terra CO2',
-      date: 'May 2024 - Aug 2024',
-      description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
-      image: laptop
+      company: 'American Eagle Outfitters',
+      date: 'Sept 2019 - Nov 2021',
+      description: 'Drove sales by actively engaging with customers to understand their needs. Provided detailed product information, assisted with selections, and efficiently managed cash registers and fitting rooms.',
+      image: clothes
+
     },
     {
       title: 'Cast Member',
-      company: 'Terra CO2',
-      date: 'May 2024 - Aug 2024',
-      description: 'Created blah blah blah blah blah! Then I made this and that and went to do this and that. Lastly, I created some of these for that.',
-      image: laptop
+      company: 'Cineplex Entertainment',
+      date: 'June 2018 - Sept 2019',
+      description: 'Organized and led birthday parties based on participant preferences. Prepared and served hot food, popcorn and Starbucks drinks. Operated and cleaned the frozen yourt machines and other equipment',
+      image: worker
     },
   ]
   const slider = useRef();
@@ -100,7 +105,14 @@ const Experiences = () => {
                   <span><i>{slide.company}, {slide.date}</i></span>
                 </div>
               </div>
-              <p>{slide.description}</p>
+              <p>{Array.isArray(slide.description)
+                    ? slide.description.map((line, idx) => (
+                        <span key={idx}>
+                          {line}
+                          {idx < slide.description.length - 1 && <><br /><br /></>}
+                        </span>
+                      ))
+                    : slide.description}</p>
             </div>
           </li>
         ))}
