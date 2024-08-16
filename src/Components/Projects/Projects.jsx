@@ -8,7 +8,7 @@ const Projects = () => {
     { title: 'IntelligentDashboard', description: 'Manage your daily tasks using real-time statistics and productivity recommendations.', tech: 'JavaScript, CSS, HTML', link: 'https://github.com/daniCodes1/IntelligentDashboard' },
     { title: 'Movie Manager', description: 'Get personalized movie recommendations, save and revisit favourites', tech: 'Java', link: 'https://github.com/daniCodes1/Movie-Manager' },
     { title: 'DigitalDiary', description: 'Blend convenience with the timeless art of self-expression. Log in to write, save and view your diary entries.', tech: 'Python', link: 'https://github.com/daniCodes1/DigitalDiary' },
-    { title: 'MoodShift', description: 'An art recommendations app inspired by art therapy forms, created during HackCamp', tech: 'Java', link: 'https://example.com/project4' },
+    { title: 'MoodShift', description: 'An art recommendations app inspired by art therapy forms, created during HackCamp', tech: 'Java', link: 'https://github.com/daniCodes1/Moodshift' },
 
   ];
 
