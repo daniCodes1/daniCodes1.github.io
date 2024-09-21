@@ -14,11 +14,11 @@ import worker from '../../assets/worker.png'
 const Experiences = () => {
   const slides = [
     {
-      title: 'Frontend Software Developer',
+      title: 'Software Developer',
       company: 'Terra CO2',
       date: 'May 2024 - Aug 2024',
       description: [
-        'Developed a web application that enables internal users to interact with the company database.Users can add, modify, and create data, generate reports, and view maps.',
+        'Enhanced the internal employee portal to streamline the creation of custom reports, plots, maps, and interactive user interfaces. Optimized data storage and retrieval for improved research efficiency and data accessibility.',
         'Python, JavaScript, HTML, CSS, Flask'
       ],
       image: programming
