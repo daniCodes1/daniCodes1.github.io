@@ -15,11 +15,12 @@ const App = () => {
       <Hero />
       <div className='container'>
         <About />
-        <Title subTitle='Portfolio' title='Projects '/>
-        <Projects />
-        <Title subTitle='Slideshow' title='Experiences '/>
+        {/* <Title subTitle='Portfolio' title='Projects '/> */}
         <Experiences />
-        <Title subTitle='Contact Me' title='Get in Touch '/>
+
+        <Projects />
+        {/* <Title subTitle='Slideshow' title='Experiences '/> */}
+        {/* <Title subTitle='Contact Me' title='Get in Touch '/> */}
         <Contact />
         <Footer />
       </div>

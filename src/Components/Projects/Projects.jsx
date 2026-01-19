@@ -13,19 +13,28 @@ const Projects = () => {
   ];
 
   return (
-    <div className="project-container">
+  <div className="project-container">
+    <div className="exp-head">
+      <p className="exp-starter">SHOWCASE</p>
+      <h2 className="exp-title">Projects</h2>
+    </div>
+
+    <div className="projects-grid">
       {projects.map((project, index) => (
         <div className="project-card" key={index}>
           <h2>{project.title}</h2>
           <h3>{project.description}</h3>
           <p>{project.tech}</p>
-          <a href={project.link} target="_blank">
-            <button className="btn">View Project Code</button>
+          <a href={project.link} target="_blank" rel="noreferrer">
+            <button className="btn">Repo</button>
           </a>
         </div>
       ))}
     </div>
-  );
+  </div>
+);
+
+      
 };
 
 
