@@ -60,11 +60,11 @@ export default function About() {
 
       <div className="about-right">
         <p className="about-starter">ABOUT</p>
-        <h2 className="about-title">Hi, I’m Dani.</h2>
+        <h2 className="about-title">What I enjoy</h2>
         <p className="about-subtitle">
-          I enjoy taking on new projects and building clean, reliable solutions!
-        </p>
-
+      Taking on new projects and challenges!
+      I focus on maintainable code and have worked across both backend logic and user-facing features.
+       </p>
         <div className="about-card">
           <h3 className="about-card-title">Technologies</h3>
 

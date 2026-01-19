@@ -25,6 +25,7 @@
 .carousel{
   position: relative;
   width: 100%;
+  min-height: 440px;
 }
 
 .slider{

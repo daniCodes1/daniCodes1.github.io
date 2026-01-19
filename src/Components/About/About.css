@@ -34,7 +34,7 @@
 
 .about-title {
   margin: 0 0 12px;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 1.1;
 }
 
@@ -154,7 +154,7 @@
     padding: 48px 20px;
   }
   .about-title {
-    font-size: 36px;
+    font-size: 25px;
   }
   .about-icons {
     grid-template-columns: repeat(4, minmax(0, 1fr));
