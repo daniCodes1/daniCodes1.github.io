@@ -55,8 +55,9 @@ export default function Hero() {
         <p className="hero__starter">Hi, I’m Dani.</p>
 
         <h1 className="hero__title">
-          <span className="hero__gradient hero__typewriter">{text}</span>
+          <span className="hero__gradient hero__typewriter">{text}
           <Cursor cursorStyle="▍" />
+          </span>
         </h1>
 
         <p className="hero__sub">
