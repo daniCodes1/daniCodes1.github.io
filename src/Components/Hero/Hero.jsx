@@ -9,10 +9,11 @@ import {Link} from 'react-scroll';
 export default function Hero() {
   const [text] = useTypewriter({
     words: [
-      "Shipping tools people understand.",
+      "Shipping ideas into reality.",
       "Designing reliable software systems.",
-      "Engineering data-driven platforms.",
-      "Building cool visualizations.",    ],
+      "Simplifying hard problems.",
+      "Building cool visualizations.",
+    ],
     loop: true,
     delaySpeed: 1200,
     typeSpeed: 42,
