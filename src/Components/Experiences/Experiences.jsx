@@ -25,7 +25,7 @@ const Experiences = () => {
       company: "Terra CO2",
       date: "May 2024 - Aug 2024",
       description: [
-        "Added features to an internal data platform supporting ingestion, processing, and reporting workflows. Built interactive dashboards, automated reports, and geospatial visualizations to enable self-serve analytics and optimized backend logic and PostgreSQL queries.",
+        "Full stack development on an internal data platform supporting ingestion, processing, and reporting workflows. Built interactive dashboards, automated reports, and geospatial visualizations to enable self-serve analytics and optimized PostgreSQL queries.",
         "Python, JavaScript, PostgreSQL, Flask, HTML, CSS",
       ],
       image: programming,
